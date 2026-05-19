@@ -14,7 +14,7 @@ export function Education() {
             <span>{education.graduation}</span>
             {/* <span>GPA {education.gpa}</span> */}
           </div>
-          <p className="edu__coursework-title">Selected coursework</p>
+          <p className="edu__coursework-title">Relevant Coursework</p>
           <ul className="edu__coursework">
             {education.coursework.map((course) => (
               <li key={course} className="edu__course">

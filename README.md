@@ -37,24 +37,18 @@ Edit files in `src/data/`:
 |------|----------|
 | `profile.ts` | Name, bio, education, social links |
 | `skills.ts` | Skill groups and tags |
-| `building.ts` | “What I'm building” cards |
-| `contributing.ts` | “Where I'm contributing” cards |
+| `activity.ts` | Bullet list for “what i'm up to” |
 
-### Adding a work card
+### Adding activity bullets
 
-Push an object into `buildingItems` or `contributingItems`:
+Edit strings in `activity.ts`:
 
 ```ts
-{
-  title: 'Project name',
-  subtitle: 'Optional context',
-  period: 'Jan 2026 – Present',
-  summary: ['One or two short sentences in your own words.'],
-  tags: ['Python', 'PyTorch'],
-}
+export const activityBullets = [
+  'building something cool with pytorch',
+  'interning somewhere neat',
+]
 ```
-
-Empty slots (up to 3 per section) render as placeholder shells when arrays have fewer than 3 entries.
 
 ## Deployment
 

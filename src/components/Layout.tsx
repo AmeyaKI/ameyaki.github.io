@@ -1,6 +1,7 @@
-import { useState, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { NAV_LINKS } from '../constants'
 import { profile } from '../data/profile'
+import { FooterSocial } from './FooterSocial'
 
 type LayoutProps = {
   children: ReactNode
@@ -8,13 +9,33 @@ type LayoutProps = {
 
 export function Layout({ children }: LayoutProps) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [showNavBrand, setShowNavBrand] = useState(false)
+
+  useEffect(() => {
+    const hero = document.getElementById('hero')
+    if (!hero) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowNavBrand(!entry.isIntersecting),
+      { threshold: 0, rootMargin: '-64px 0px 0px 0px' },
+    )
+
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <div className="layout">
       <header className="nav">
         <div className="nav__inner">
-          <a href="#" className="nav__brand" onClick={() => setMenuOpen(false)}>
-            {profile.name.split(' ')[0]}
+          <a
+            href="#"
+            className={`nav__brand${showNavBrand ? ' nav__brand--visible' : ''}`}
+            onClick={() => setMenuOpen(false)}
+            aria-hidden={!showNavBrand}
+            tabIndex={showNavBrand ? 0 : -1}
+          >
+            {profile.name}
           </a>
           <button
             type="button"
@@ -60,36 +81,7 @@ export function Layout({ children }: LayoutProps) {
       <footer className="footer" id="contact">
         <div className="container footer__inner">
           <p className="footer__label">Get in touch</p>
-          <ul className="footer__links">
-            <li>
-              <a
-                href={`mailto:${profile.social.email}`}
-                className="footer__link"
-              >
-                Email
-              </a>
-            </li>
-            <li>
-              <a
-                href={profile.social.linkedin}
-                className="footer__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href={profile.social.github}
-                className="footer__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
+          <FooterSocial />
           <p className="footer__copy">
             © {new Date().getFullYear()} {profile.name}
           </p>

@@ -5,7 +5,7 @@ export function About() {
     <section id="about" className="section section--fade">
       <div className="container">
         <p className="section__label">About</p>
-        <h2 className="section__title">A bit about me</h2>
+        <h2 className="section__title">{profile.aboutTitle}</h2>
         {profile.about.map((paragraph) => (
           <p key={paragraph.slice(0, 40)} className="about__text">
             {paragraph}
