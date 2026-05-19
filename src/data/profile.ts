@@ -2,12 +2,12 @@ export const profile = {
   name: 'Ameya Kiwalkar',
   tagline: 'Data Science & Computer Science @ UC Berkeley',
   hook:
-    'I build real-world tools and applications with machine learning, AI, and software engineering.',
+    'Building real-world tools with machine learning + software engineering.',
   aboutTitle: 'What I care about',
   about: [
-    "I'm at Berkeley studying how to turn ideas into software people can rely on—from retrieval and agents to computer vision and the infrastructure that keeps it all running in production.",
-    'I gravitate toward projects that ship: measurable, practical, and built to matter outside a notebook or slide deck.',
+    "I learn by building — translating ideas and thoughts into software people can actually use. Whether that's through semantic retrieval, AI agents, ML algorithms, or the infrastructure that makes it all run, I'm eager to ship and deploy solutions that make a measurable impact on the world around me.",
   ],
+  
   education: {
     school: 'University of California, Berkeley',
     degrees: 'Data Science & Computer Science',
