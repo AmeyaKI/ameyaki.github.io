@@ -1,5 +1,5 @@
 export const activityBullets: string[] = [
-  'Shipping semantic search and retrieval (RAG) updates to better capture temporal and semantic queries.',
-  'Leveraging agents, GNNs, and LLMs to predict molecular solubility.',
-  'Building agent verification infra, LLM-powered analytics, computer vision tools, and more.',
+  'Refining semantic search and retrieval (RAG) for diverse, production datasets.',
+  'Leveraging agents, GNNs, and LLMs to predict molecular properties.',
+  'Building agent verification infra, RAG/IR eval tooling, and more.',
 ]
