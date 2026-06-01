@@ -5,14 +5,14 @@ export const skillGroups = [
   },
   {
     label: 'Machine Learning',
-    tags: ['PyTorch', 'scikit-learn', 'Hugging Face', 'OpenCV', 'GNNs', 'NumPy', 'Pandas'],
+    tags: ['PyTorch', 'scikit-learn', 'Hugging Face', 'OpenCV', 'YOLO', 'NumPy', 'Pandas', 'TensorFlow'],
   },
   {
     label: 'LLMs & Agents',
-    tags: ['LangChain', 'vLLM', 'MLflow', 'ChromaDB', 'Cohere'],
+    tags: ['LangChain', 'vLLM', 'MLflow', 'ChromaDB', 'Cohere', 'DeepEval'],
   },
   {
     label: 'Software & Infra',
-    tags: ['FastAPI', 'PostgreSQL', 'Docker', 'Git', 'Supabase'],
+    tags: ['FastAPI', 'PostgreSQL', 'REST APIs', 'Docker', 'Git', 'Supabase'],
   },
 ] as const

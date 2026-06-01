@@ -33,11 +33,13 @@ npm run preview
 
 Edit files in `src/data/`:
 
-| File | Contents |
-|------|----------|
-| `profile.ts` | Name, bio, education, social links |
-| `skills.ts` | Skill groups and tags |
-| `activity.ts` | Bullet list for “what i'm up to” |
+
+| File          | Contents                           |
+| ------------- | ---------------------------------- |
+| `profile.ts`  | Name, bio, education, social links |
+| `skills.ts`   | Skill groups and tags              |
+| `activity.ts` | Bullet list for “what i'm up to”   |
+
 
 ### Adding activity bullets
 
