@@ -8,7 +8,7 @@ export function Hero() {
           <div>
             <h1 className="hero__name">{profile.name}</h1>
             <p className="hero__tagline">{profile.tagline}</p>
-            <p className="hero__hook">{profile.hook}</p>
+            {/* <p className="hero__hook">{profile.hook}</p> */}
             <a href="#activity" className="hero__cta">
               See what I&apos;m up to
             </a>
