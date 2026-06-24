@@ -38,19 +38,30 @@ Edit files in `src/data/`:
 | ------------- | ---------------------------------- |
 | `profile.ts`  | Name, bio, education, social links |
 | `skills.ts`   | Skill groups and tags              |
-| `activity.ts` | Bullet list for “what i'm up to”   |
+| `activity.ts` | Activity items for “what i'm up to” (name, description, optional link) |
 
 
-### Adding activity bullets
+### Adding activity items
 
-Edit strings in `activity.ts`:
+Edit objects in `activity.ts`:
 
 ```ts
-export const activityBullets = [
-  'building something cool with pytorch',
-  'interning somewhere neat',
+export const activityItems: ActivityItem[] = [
+  {
+    role: 'ml engineering intern',
+    organization: 'attrove',
+    description: 'what you built and the impact.',
+    href: 'https://attrove.com', // optional
+  },
+  {
+    name: 'project-name',
+    description: 'what the project does.',
+    href: 'https://github.com/AmeyaKI/repo-name', // optional
+  },
 ]
 ```
+
+Use `role` + `organization` for internships (`role @ org – description`) or `name` for projects (`name – description`). Items with `href` render as clickable rows.
 
 ## Deployment
 

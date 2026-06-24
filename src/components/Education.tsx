@@ -12,7 +12,6 @@ export function Education() {
           <p className="edu__degrees">{education.degrees}</p>
           <div className="edu__meta">
             <span>{education.graduation}</span>
-            {/* <span>GPA {education.gpa}</span> */}
           </div>
           <p className="edu__coursework-title">Relevant Coursework</p>
           <ul className="edu__coursework">

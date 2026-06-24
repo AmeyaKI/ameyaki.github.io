@@ -5,7 +5,7 @@ export const profile = {
   //   'Building real-world tools with machine learning + software engineering.',
   aboutTitle: 'What I care about',
   about: [
-    "I learn by building — translating ideas and thoughts into software people can actually use. Whether that's through semantic retrieval, agents, algorithms, or the infrastructure that makes it all run, I'm eager to ship and deploy solutions that make a measurable impact on the world around me.",
+    "i learn by building - translating ideas and thoughts into software people can actually use. whether its semantic retrieval, agents, llms, or the infrastructure that makes it all run, im eager ot ship and deploy solutions that make a measurable impact on the world around me."
   ],
   
   education: {

@@ -1,7 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { NAV_LINKS } from '../constants'
 import { profile } from '../data/profile'
-import { FooterSocial } from './FooterSocial'
 
 type LayoutProps = {
   children: ReactNode
@@ -78,10 +77,8 @@ export function Layout({ children }: LayoutProps) {
         </div>
       </header>
       <main className="main">{children}</main>
-      <footer className="footer" id="contact">
+      <footer className="footer">
         <div className="container footer__inner">
-          <p className="footer__label">Get in touch</p>
-          <FooterSocial />
           <p className="footer__copy">
             © {new Date().getFullYear()} {profile.name}
           </p>

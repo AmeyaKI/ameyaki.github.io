@@ -1,18 +1,46 @@
 export const skillGroups = [
   {
     label: 'Languages',
-    tags: ['Python', 'Java', 'SQL', 'TypeScript', 'JavaScript', 'Scheme'],
+    tags: ['Python', 'Java', 'SQL', 'TypeScript', 'JavaScript', 'Scheme/Lisp'],
   },
   {
-    label: 'Machine Learning',
-    tags: ['PyTorch', 'scikit-learn', 'Hugging Face', 'OpenCV', 'YOLO', 'NumPy', 'Pandas', 'TensorFlow'],
+    label: 'ML & Data',
+    tags: [
+      'PyTorch',
+      'scikit-learn',
+      'Hugging Face',
+      'sentence-transformers',
+      'sqlite',
+      'NumPy',
+      'Pandas',
+      'OpenCV',
+    ],
   },
   {
-    label: 'LLMs & Agents',
-    tags: ['LangChain', 'vLLM', 'MLflow', 'ChromaDB', 'Cohere', 'DeepEval'],
+    label: 'Retrieval & LLMs',
+    tags: [
+      'LangChain',
+      'vLLM',
+      'MLflow',
+      'Cohere',
+      'ChromaDB',
+      'DeepEval',
+      'FastAPI',
+      'pgvector',
+    ],
   },
   {
     label: 'Software & Infra',
-    tags: ['FastAPI', 'PostgreSQL', 'REST APIs', 'Docker', 'Git', 'Supabase'],
+    tags: [
+      'PostgreSQL',
+      'asyncio',
+      'React',
+      'Docker',
+      'Git',
+      'Supabase',
+      'Pydantic',
+      'Prometheus',
+      'REST APIs',
+    ],
   },
 ] as const

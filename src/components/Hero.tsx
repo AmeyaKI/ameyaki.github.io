@@ -1,4 +1,5 @@
 import { profile } from '../data/profile'
+import { SocialLinks } from './SocialLinks'
 
 export function Hero() {
   return (
@@ -8,9 +9,9 @@ export function Hero() {
           <div>
             <h1 className="hero__name">{profile.name}</h1>
             <p className="hero__tagline">{profile.tagline}</p>
-            {/* <p className="hero__hook">{profile.hook}</p> */}
-            <a href="#activity" className="hero__cta">
-              See what I&apos;m up to
+            <SocialLinks variant="hero" />
+            <a href="#activity" className="hero__scroll">
+              what i&apos;m up to ↓
             </a>
           </div>
           <div className="hero__photo-wrap">
