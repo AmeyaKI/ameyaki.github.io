@@ -30,6 +30,6 @@ export const activityItems: ActivityItem[] = [
     name: 'tbd',
     description:
       'tbd',
-    href: 'tbd',
+    // href: 'tbd',
   },
 ]
