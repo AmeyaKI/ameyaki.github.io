@@ -15,7 +15,7 @@ export const activityItems: ActivityItem[] = [
     href: 'https://attrove.com',
   },
   {
-    role: 'applied ai research intern',
+    role: 'applied ai researcher',
     organization: 'merck',
     description:
       'architected a multi-agent MoE workflow for molecular property prediction.',
