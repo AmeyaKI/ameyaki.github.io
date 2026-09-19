@@ -14,7 +14,7 @@ function App() {
         <p key={paragraph.slice(0, 40)}>{paragraph}</p>
       ))}
 
-      <h2 className="heading">⟢ experience</h2>
+      <h2 className="heading">~/experience</h2>
       <ul className="list">
         {experience.map((item) => (
           <li key={item.title}>
@@ -24,7 +24,7 @@ function App() {
         ))}
       </ul>
 
-      <h2 className="heading">⟢ projects</h2>
+      <h2 className="heading">~/projects</h2>
       <ul className="list">
         {projects.map((item) => (
           <li key={item.name}>
