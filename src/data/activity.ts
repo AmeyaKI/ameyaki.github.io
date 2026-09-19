@@ -1,35 +1,38 @@
-export type ActivityItem = {
-  role?: string
-  organization?: string
-  name?: string
+export type Experience = {
+  title: string
   description: string
-  href?: string
 }
 
-export const activityItems: ActivityItem[] = [
+export type Project = {
+  name: string
+  description: string
+  href: string
+}
+
+export const experience: Experience[] = [
   {
-    role: 'ml engineering intern',
-    organization: 'attrove',
-    description:
-      'building production rag pipelines for enterprise communications',
-    href: 'https://attrove.com',
+    title: 'incoming ml researcher @ ucsf sohn lab',
+    description: 'radiology & biomedical imaging',
   },
   {
-    role: 'applied ai researcher',
-    organization: 'merck',
-    description:
-      'architected a multi-agent MoE workflow for molecular property prediction.',
+    title: 'prev. ml engineering @ attrove',
+    description: 'built production rag pipelines for enterprise communications',
   },
+  {
+    title: 'prev. applied ai research @ merck',
+    description: 'designed multi-agentic workflows for molecular analysis',
+  },
+]
+
+export const projects: Project[] = [
   {
     name: 'retobs',
-    description:
-      'an open-source retrieval reliability platform + pypi library for benchmarking, debugging, and continuously improving rag systems in production',
+    description: 'benchmarking, debugging, and regression-testing for rag retrieval pipelines. on pypi',
     href: 'https://github.com/AmeyaKI/retrieval-observatory',
   },
   {
-    name: 'tbd',
-    description:
-      'tbd',
-    // href: 'tbd',
+    name: 'open-hearts',
+    description: 'probabilistic search agents for imperfect-information environments',
+    href: 'https://github.com/AmeyaKI/open-hearts',
   },
 ]
