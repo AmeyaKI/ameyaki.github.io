@@ -11,8 +11,8 @@ export type Project = {
 
 export const experience: Experience[] = [
   {
-    title: 'incoming ml researcher @ ucsf sohn lab',
-    description: 'radiology & biomedical imaging',
+    title: 'ml researcher @ ucsf sohn lab',
+    description: 'fine-tuning algorithms for biomedical imaging',
   },
   {
     title: 'prev. ml engineering @ attrove',
